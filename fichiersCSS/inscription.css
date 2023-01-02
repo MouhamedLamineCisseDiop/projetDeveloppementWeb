@@ -1,0 +1,42 @@
+.input-group{
+  position: relative;
+}
+
+label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transform-origin: left;
+  transition: transform .25s;
+}
+
+.test{
+ padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font: inherit;
+  color: #fff;
+  background-color: transparent;
+  outline: 2px solid #fff;
+}
+
+.input-group:focus-within label{
+  transform: translate(0, -30px) scale(.8);
+  color: #d1c5fc;
+}
+
+.input-group:focus-within .test{
+  outline-color: #d1c5fc;
+}
+
+body{
+  position: relative;
+}
+
+#container{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+ transform: translate(50%, 50%);
+}
